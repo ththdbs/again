@@ -1,52 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-397NEH73RW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-397NEH73RW');
-</script>
     <title>jeju story</title>
-    <meta charset="utf-8">    
+    <meta charset="utf-8">
+    <style>
+    body{margin:0;}
+    a {text-decoration: none;}
+   .h5 {color:skyblue} 
+    h1{font-size: 45px; text-align: center; border-bottom:solid purple 2px ; padding: 40px; margin: 0;}
+    h5{font-size: 25px; margin:0; color:skyblue;} 
+    li::marker{color:skyblue; content:"-"; font-size: 30px; }
+    img {width: auto; height:auto;}
+    div{display:grid; grid-template-columns:1fr 1fr;}
+    ul{padding-right: 35px; padding-top: 40px;}
+
+    @media screen and (max-width:800px){
+    h1{border-bottom:none;}
+    img {border-left: none;}
+    div {display:block;}
+    ul {margin-bottom:50px;}
+    h5 {font-size:25px;}
+    }
+    </style>
 </head>    
 
 <body>
 <h1><strong><a href="https://blog.naver.com/soyoooon_" target="_blank" title="soyoon blog"> my memory in jeju </a></strong></h1>
-<br>
-<img src="제주도.jpeg" width="100%">
-
-<ol>
-    <p><li><h5><a href="2.html" title="풍경">landscape</a></h5></li></p>
-    <p><li><h5><a href="3.html" title="음식">food</a></h5></li></p>
-    <p><li><h5><a href="4.html" title="노래">song</a></h5></li></p>    
-</ol>
-
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://jeju-story-1.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-
-
+<div>
+<div>
+<ul>
+    <br>
+    <li><h5><a href="2.html" title="풍경" class="h5">landscape</a></h5></li>
+    <br>
+    <li><h5><a href="3.html" title="음식" class="h5">food</a></h5></li>
+    <br>
+    <li><h5><a href="4.html" title="노래" class="h5">song</a></h5></li>    
+</ul>
+</div>
+<div><img src="제주도.jpeg"></div>
+</div>
+<script id="dsq-count-scr" src="//jeju-story.disqus.com/count.js" async></script>
 </body>
 </html>
